@@ -4,7 +4,7 @@
   <extend>${base.project.dir}/base-dependencies.xml</extend>
   <pomVersion>3</pomVersion>
   <name>Nemanet Integration Block</name>
-  <artifactId>is.mentor</artifactId>
+  <artifactId>is.nemanet</artifactId>
   <currentVersion>1.0.1</currentVersion>
   <inceptionYear>2007</inceptionYear>
   <shortDescription>Nemanet Integration module</shortDescription>
@@ -13,11 +13,6 @@
       <id>1.0.1</id>
       <name>1.0.1</name>
       <tag>NEMANET_1_0_1</tag>
-    </version>
-    <version>
-      <id>1.0.1</id>
-      <name>1.0.1</name>
-      <tag>HeNEMANET_1_0_1</tag>
     </version>
   </versions>
   <branches/>
