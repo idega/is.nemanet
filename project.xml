@@ -14,6 +14,11 @@
       <name>1.0.1</name>
       <tag>NEMANET_1_0_1</tag>
     </version>
+    <version>
+      <id>1.0.1</id>
+      <name>1.0.1</name>
+      <tag>HeNEMANET_1_0_1</tag>
+    </version>
   </versions>
   <branches/>
   <developers>
