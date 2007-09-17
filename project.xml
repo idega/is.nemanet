@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <extend>${base.project.dir}/base-dependencies.xml</extend>
+  <pomVersion>3</pomVersion>
+  <name>Nemanet Integration Block</name>
+  <artifactId>is.mentor</artifactId>
+  <currentVersion>1.0.1</currentVersion>
+  <inceptionYear>2007</inceptionYear>
+  <shortDescription>Nemanet Integration module</shortDescription>
+  <versions>
+    <version>
+      <id>1.0.1</id>
+      <name>1.0.1</name>
+      <tag>NEMANET_1_0_1</tag>
+    </version>
+  </versions>
+  <branches/>
+  <developers>
+    <developer>
+      <name>Thorhallur Helgason</name>
+      <id>laddi</id>
+      <email>laddi@idega.is</email>
+      <organization>idega software</organization>
+      <roles/>
+    </developer>
+  </developers>
+  <dependencies>
+    <dependency>
+      <groupId>bundles</groupId>
+      <artifactId>com.idega.core</artifactId>
+      <version>3.1.63</version>
+      <type>jar</type>
+      <url>http://www.idega.com/</url>
+    </dependency>
+  </dependencies>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+  </build>
+  <properties/>
+</project>
