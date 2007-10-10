@@ -28,7 +28,7 @@ public class NemanetEncryptionBean extends RijndaelEncryptionBean {
 			String key = iwma.getSettings().getProperty(PROPERTY_ENCRYPTION_KEY);
 			String iv = iwma.getSettings().getProperty(PROPERTY_INIT_VECTOR);
 			if (key != null && iv != null) {
-				instance.setKeySize(32);
+				instance.setKeySize(16);
 				instance.setSecretKey(key);
 				instance.setIV(iv.getBytes());
 			}
