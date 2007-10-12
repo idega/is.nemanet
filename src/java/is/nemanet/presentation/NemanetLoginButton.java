@@ -32,7 +32,7 @@ import com.idega.util.encryption.RijndaelEncryptionBean;
 public class NemanetLoginButton extends PresentationObjectTransitional {
 
 	private String webapplicationUrl = null;
-	private String parameterKey1 = "prm_personal_id";
+	private String parameterKey1 = "keyvalue";
 	private String target = "_new";
 
 	public static final String IW_BUNDLE_IDENTIFIER = "is.nemanet";
