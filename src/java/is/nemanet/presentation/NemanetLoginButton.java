@@ -1,6 +1,3 @@
-/**
- * 
- */
 package is.nemanet.presentation;
 
 import is.nemanet.business.NemanetEncryptionBean;
@@ -25,7 +22,7 @@ import com.idega.util.encryption.RijndaelEncryptionBean;
  * external webapplication.
  * </p>
  * Last modified: $Date$ by $Author$
- * 
+ *
  * @author <a href="mailto:tryggvil@idega.com">tryggvil</a>
  * @version $Revision$
  */
@@ -41,6 +38,7 @@ public class NemanetLoginButton extends PresentationObjectTransitional {
 	/* (non-Javadoc)
 	 * @see com.idega.presentation.PresentationObject#getBundleIdentifier()
 	 */
+	@Override
 	public String getBundleIdentifier() {
 		return IW_BUNDLE_IDENTIFIER;
 	}
@@ -69,6 +67,7 @@ public class NemanetLoginButton extends PresentationObjectTransitional {
 	/* (non-Javadoc)
 	 * @see com.idega.presentation.PresentationObjectTransitional#initializeComponent(javax.faces.context.FacesContext)
 	 */
+	@Override
 	protected void initializeComponent(FacesContext context) {
 		IWContext iwc = IWContext.getIWContext(context);
 		IWMainApplication iwma = iwc.getIWMainApplication();
@@ -97,7 +96,7 @@ public class NemanetLoginButton extends PresentationObjectTransitional {
 	 * <p>
 	 * TODO tryggvil describe method getTarget
 	 * </p>
-	 * 
+	 *
 	 * @return
 	 */
 	private String getTarget() {
@@ -112,7 +111,7 @@ public class NemanetLoginButton extends PresentationObjectTransitional {
 	 * <p>
 	 * TODO tryggvil describe method encryptValue
 	 * </p>
-	 * 
+	 *
 	 * @param userPersonalId
 	 * @return
 	 */
@@ -127,6 +126,7 @@ public class NemanetLoginButton extends PresentationObjectTransitional {
 	/* (non-Javadoc)
 	 * @see com.idega.presentation.PresentationObjectTransitional#encodeBegin(javax.faces.context.FacesContext)
 	 */
+	@Override
 	public void encodeBegin(FacesContext context) throws IOException {
 		super.encodeBegin(context);
 	}
@@ -134,6 +134,7 @@ public class NemanetLoginButton extends PresentationObjectTransitional {
 	/* (non-Javadoc)
 	 * @see com.idega.presentation.PresentationObjectTransitional#encodeChildren(javax.faces.context.FacesContext)
 	 */
+	@Override
 	public void encodeChildren(FacesContext context) throws IOException {
 		super.encodeChildren(context);
 	}
@@ -141,6 +142,7 @@ public class NemanetLoginButton extends PresentationObjectTransitional {
 	/* (non-Javadoc)
 	 * @see com.idega.presentation.PresentationObjectTransitional#encodeEnd(javax.faces.context.FacesContext)
 	 */
+	@Override
 	public void encodeEnd(FacesContext arg0) throws IOException {
 		super.encodeEnd(arg0);
 	}
@@ -164,6 +166,7 @@ public class NemanetLoginButton extends PresentationObjectTransitional {
 	/**
 	 * @see javax.faces.component.UIComponentBase#saveState(javax.faces.context.FacesContext)
 	 */
+	@Override
 	public Object saveState(FacesContext ctx) {
 		Object values[] = new Object[3];
 		values[0] = super.saveState(ctx);
@@ -176,6 +179,7 @@ public class NemanetLoginButton extends PresentationObjectTransitional {
 	 * @see javax.faces.component.UIComponentBase#restoreState(javax.faces.context.FacesContext,
 	 *      java.lang.Object)
 	 */
+	@Override
 	public void restoreState(FacesContext ctx, Object state) {
 		Object values[] = (Object[]) state;
 		super.restoreState(ctx, values[0]);
